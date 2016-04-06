@@ -1,0 +1,54 @@
+{% extends "libros/base.html" %}
+{%   load   staticfiles   %}
+
+{% block elcss %}
+
+{% endblock %}
+{% block titulo %}
+Detalle del Titulo
+{% endblock %}
+{% block content %}
+<row>
+	<div class="col-md-4">
+		<br />
+		{% if titulos.portada %}
+			<img src="{{ titulos.portada.url }}" class="img-rounded" width="318" height="484" >
+		{% endif %}
+		<br/><br />
+	</div>
+	<div class="col-md-8">
+		<div class="thumbnail">
+			<br />
+			{% if titulos.portada %}
+				<img src="{{ titulos.portada.url }}" class="img-rounded" width="318" height="484" >
+			{% endif %}
+			<br/><br />
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Detalle del Titulo
+				</div>
+				<div class="panel-body">
+					  <div class="table-responsive">
+						<table class="table table-striped">
+						<th>Titulo</th>
+						<th>Autor</th>
+						<th>Lector</th>
+						<th>Fecha</th>
+						<th>Puntuacion</td>
+						<th>ISBN</td>
+						<tr>
+							<td>{{ titulos.titulo | capfirst}}</td>
+							<td>{{ titulos.autor | capfirst}}</td>
+							<td>{{ titulos.lector }}</td>
+							<td>{{ titulos.fecha | date:"SHORT_DATE_FORMAT" }}</td>
+							<td>{{ titulos.puntuacion }}</td>
+							<td>{{ titulos.isbn }}</td>
+						</tr>
+					  </table>
+					  </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</row>
+{% endblock %}

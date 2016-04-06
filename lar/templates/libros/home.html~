@@ -15,7 +15,7 @@
 <body>
 	<h1>No tengo nada que ver con el resto de esto</h1>
 	<br />
-	<a href="/libros_index" class="btn btn-primary btn-lg">Libros</a>
+	<a href="/libros_index" class="btn btn-primary btn-lg btn-block">Libros</a>
 
 <!--- -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

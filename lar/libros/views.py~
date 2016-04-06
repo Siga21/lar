@@ -7,7 +7,7 @@ def home(request):
 	return render(request, 'libros/home.html')
 
 class ListaTitulos(ListView):
-    queryset = titulos.objects.order_by('-fecha')
+    queryset = titulos.objects.order_by('fecha DESC')
     context_object_name = 'titulos'
     paginate_by = 8
 
