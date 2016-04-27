@@ -1,25 +1,108 @@
 {%   load   staticfiles   %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SIGA XXI</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">S.I.G.A. XXI</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+        	<a href="/admin" class="btn btn-success" style="margin-top: 7px;">Administración</a>
+        </div>
+      </div>
+    </nav>
 
-	<title>Principal</title>
-
-	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-</head>
-<body>
-	<h1>No tengo nada que ver con el resto de esto</h1>
-	<br />
-	<a href="/libros_index" class="btn btn-primary btn-lg btn-block">Libros</a>
-
-<!--- -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-</body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" >
+      <div class="container" style="color='#f5d500;'">
+        <br /><br />
+        <h1>SIGA XXI</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    <!-- secciones -->  
+    <div class="container secciones">
+        <div class="row">
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/arduino.jpg" width="140" height="140">   
+                <h2>Arduino</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div>    
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/satori.jpg" width="140" height="140">
+                <h2>Satori P.</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="http://siga21xserver.sytes.net" role="button">Ver más &raquo;</a></p>
+            </div> 
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/django.png" width="140" height="140">
+                <h2>Django</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div> 
+        </div>
+        <hr />
+    </div>
+    <div class="container secciones">
+        <div class="row">
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/libros.jpg" width="140" height="140">   
+                <h2>Libros</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="/libros_index" role="button">Ver más &raquo;</a></p>
+            </div>    
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/peregrinos.jpg" width="140" height="140">
+                <h2>Peregrinos</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="http://siga21vserver.sytes.net/index" role="button">Ver más &raquo;</a></p>
+            </div> 
+            <div class="col-md-4">
+                <center>
+                <img class="img circle" src="/media/imagenes/conocimiento.png" width="140" height="140">
+                <h2>Bitácora</h2>   
+                </center>    
+                <p>Arduino Lorem ipsum dolor sit et amec consecunentur dapibus et facilibus in egestas crass mattis comodo luctus porta et consecuentor at eros praesar</p>
+                <p><a class="btn btn-default" href="#" role="button">Ver más &raquo;</a></p>
+            </div> 
+        </div>
+        <hr />
+    </div>  
+    <!--- -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 SIGA XXI. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>  
+    <!-- -->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
 </html>
